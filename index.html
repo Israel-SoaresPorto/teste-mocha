@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Mocha e Chai via CDN -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projeto Web com Testes em Mocha</title>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/10.2.0/mocha.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.7/chai.min.js"></script>
+    <script>
+      mocha.setup("bdd");
+    </script>
+
+    <h1>Lista de Itens</h1>
+    <input type="text" id="itemInput" placeholder="Digite um item" />
+    <button onclick="adicionarItem()">Adicionar Item</button>
+    <ul id="itemList"></ul>
+
+    <script src="app.js"></script>
+    <script src="teste.js"></script>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>

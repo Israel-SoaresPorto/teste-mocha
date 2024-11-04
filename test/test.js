@@ -1,4 +1,4 @@
-const assert = chai.assert;
+const assert = require("assert");
 
 describe("Teste da interface de lista de itens", function() {
     beforeEach(function() {
